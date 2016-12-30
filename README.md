@@ -4,6 +4,8 @@
 
 *Note: This is completely client-side. If you need something with a lower chance of being fooled, please implement a solution server-side.*
 
+![](http://i.lws.io/ibJu/Screen%20Recording%202016-12-30%20at%2004.59%20pm.gif)
+
 ### Dependencies
 
 * jQuery 
