@@ -1,25 +1,36 @@
-Clarifai JavaScript Starter
-===========================
+# Clarifai NSFW Form Checker
 
-This is a basic starter project for using the [Clarifai API](http://clarifai.com).
+## This project checks form inputs for NSFW content before allowing a form submission. 
 
-## Usage
+*Note: This is completely client-side. If you need something with a lower chance of being fooled, please implement a solution server-side.*
 
-To get started, create an account at [developer.clarifai.com](http://developer.clarifai.com).
+### Dependencies
 
-Create an application, and get your Client ID and Client Secret.
+* jQuery 
 
-This basic starter uses your Client ID and Client Secret to get an access token.
-Since this expires every so often, the client is setup to renew the token for
-you automatically using your credentials so you don't have to worry about it.
+### Get the project set up
 
-You'll notice that in the `.gitignore` file, it references a `keys.js` file. 
-This is for security purposes, so you don't share your Client ID and Client
-Secret with others.  Create a `keys.js` file and have it look like the following:
+1. Go to the [Clarifai](http://clarifai.com) website, sign up for an account and create a new application. Make sure you Default Model to NSFW. 
+2. Rename **options.js.exmaple** to **options.js**
+3. Copy your Client ID and copy it into the `CLIENT_ID` variable in **options.js**
+4. Copy your Client Secret and copy it into the `CLIENT_SECRET` variable in **options.js**
 
-```
-var CLIENT_ID = 'your ID here';
-var CLIENT_SECRET = 'your secret here';
-```
+*Note: Do not share your Client ID or Secret. The file __options.js__ is already included in the __.gitignore__ file, meaning it will not be committed to your git repo.*
 
-Then you're all set! Happy Clarifai-ing. :)
+### Implement for your form
+
+1. Create a `<form>` element and give it an ID.
+2. Make sure the ID is correct in the `FORM_ID` variable in **options.js**
+3. Create a `<input type="file">` and give it an class.
+4. Make sure the class is correct in the `FILE_CLASS` variable in **options.js**
+5. Make sure there is a `<input type="submit">` in your form.
+
+### Altering the threshold 
+
+Dependent on what your project is, you may wish to lower/increase the lower SFW value allowed by this project. You can do this by changing the `SFW_LOWER_LIMIT` variable in **options.js**
+
+Remember that the value must be between 0 and 1, where 1 is compltely SFW and 0 is completely NSFW. 
+
+### To do 
+
+- [ ] Work with more than one file input in a form

@@ -1,0 +1,5 @@
+var CLIENT_ID = '';
+var CLIENT_SECRET = '';
+var SFW_LOWER_LIMIT = 0.8;
+var FORM_ID = "clarifai-nsfw"
+var FILE_CLASS = "nsfw-check";
