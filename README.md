@@ -13,9 +13,9 @@
 ### Get the project set up
 
 1. Go to the [Clarifai](http://clarifai.com) website, sign up for an account and create a new application. Make sure you Default Model to NSFW. 
-2. Rename **options.js.exmaple** to **options.js**
-3. Copy your Client ID and copy it into the `CLIENT_ID` variable in **options.js**
-4. Copy your Client Secret and copy it into the `CLIENT_SECRET` variable in **options.js**
+2. Rename **keys.js.exmaple** to **keys.js**
+3. Copy your Client ID and copy it into the `CLIENT_ID` variable in **keys.js**
+4. Copy your Client Secret and copy it into the `CLIENT_SECRET` variable in **keys.js**
 
 *Note: Do not share your Client ID or Secret. The file __options.js__ is already included in the __.gitignore__ file, meaning it will not be committed to your git repo.*
 
