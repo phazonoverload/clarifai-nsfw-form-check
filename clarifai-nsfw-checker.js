@@ -69,10 +69,10 @@ function validateFileInputs(image) {
 function parseResponse(pass) {
   if(pass === true) {
     stateClass("approved");
-    // PUT YOUR DESIRED ACTIONS HERE
+    clarifaiCheckPass();
   } else {
     stateClass("rejected");
-    // PUT YOUR DESIRED ACTIONS HERE
+    clarifaiCheckFail();
   }
 }
 
